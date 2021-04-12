@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overlock", cursive;
+  background-color: #fefefe;
+  color: #141414;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container {
+  width: 500px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.todo-header {
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.todo-header .title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.tasks-manager {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-manager form label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.tasks-manager form input {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.task-button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.task-button:active {
+  outline: none;
+  border: none;
+}
+
+.add-task {
+  background-color: #000;
+}
+
+.add-task:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.tasks-container {
+  width: 100%;
+  margin: 0.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.delete-task {
+  background-color: red;
+}
+
+.delete-task:hover {
+  background-color: #fff;
+  color: red;
+  border: 2px solid red;
+}
+
+.complete-task {
+  background-color: green;
+}
+
+.complete-task:hover {
+  color: green;
+  background-color: #fff;
+  border: 2px solid green;
+}
+
+/* alert */
+.alert-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.alert {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  color: #fefefe;
+  border: 2px solid #fefefe;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.alert-add {
+  background-color: #34c3d6;
+}
+
+.alert-add:hover {
+  background-color: #fefefe;
+  color: #34c3d6;
+  border: 2px solid #34c3d6;
+}
+
+.alert-danger {
+  background-color: red;
+}
+
+.alert-delete:hover {
+  background-color: #fefefe;
+  color: red;
+  border: 2px solid red;
+}
+
+.alert-complete {
+  background-color: green;
+}
+
+.alert-complete:hover {
+  background-color: #fefefe;
+  color: green;
+  border: 2px solid green;
+}

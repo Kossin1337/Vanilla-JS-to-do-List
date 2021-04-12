@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO List</title>
+    <link rel="shortcut icon" type="image/pmg" href="./images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/8564e1335c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- javascript -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="alert-container"></div>
+    <div class="todo-container">
+      <div class="todo-header">
+        <h2 class="title">to-do list</h2>
+      </div>
+      <div class="tasks-manager">
+        <form>
+          <label for="task">Task name:</label>
+          <input type="text" id="task-name" name="taskname" maxlength="50" />
+        </form>
+        <button class="task-button add-task">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <div class="tasks-container"></div>
+    </div>
+  </body>
+</html>
